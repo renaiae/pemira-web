@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="PEMIRA HMGP 2021">
+    <meta name="description" content="Pemilihan Raya Mahasiswa Himpunan Mahasiswa Geografi Pembangunan Tahun 2021">
+    <meta name="keywords" content="Pemira, HMGP, UGM, Geografi, 2021, Universitas Gadjah Mada">
+    <meta name="author" content="Himpunan Mahasiswa Geografi Pembangunan">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pemirahmgp2021.online/">
+    <meta property="og:title" content="PEMIRA HMGP 2021">
+    <meta property="og:description" content="Pemilihan Raya Mahasiswa Himpunan Mahasiswa Geografi Pembangunan Tahun 2021">
+    <meta property="og:image" content="img/logo_hmgp_meta.png">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://pemirahmgp2021.online/">
+    <meta property="twitter:title" content="PEMIRA HMGP 2021">
+    <meta property="twitter:description" content="Pemilihan Raya Mahasiswa Himpunan Mahasiswa Geografi Pembangunan Tahun 2021">
+    <meta property="twitter:image" content="img/logo_hmgp_meta.png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!-- Title -->
+    <title>PEMIRA HMGP</title>
+    <link rel="icon" type="image/png" href="img/logo_hmgp.png">
+  </head>
+  <body style="background-color: #f8f9fa;">
+    <!-- Navbar -->
+    <div class="container-fluid" style="height: 58px;">
+      <nav class="navbar navbar-expand navbar-light fixed-top bg-white" style="padding-top: 5px;padding-bottom: 5px;">
+        <div class="container">
+          <a class="navbar-brand" href="index.html" style=" padding: 0px;">
+              <img src="img/logo_hmgp_meta.png" alt="logo HMGP" style="height: 40px;">
+          </a>
+          <button class="navbar-toggler mt-1" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse flex-column align-items-start ml-lg-2 ml-0" style="margin-top:-2px;">
+            <span class="navbar-text py-0 px-lg-2" style="font-weight: 475;font-size: 19px;">Pemira HMGP</span>
+            <span class="navbar-text py-0 px-lg-2" style="font-weight: 350;font-size: 12px;margin-top: -2px;">Universitas Gadjah Mada</span>
+          </div>
+          <div class="collapse navbar-collapse flex-column align-items-start ml-lg-2 ml-0" id="navbarCollapse">
+            <ul class="navbar-nav flex-row mb-2 mb-auto ml-auto" style="margin-top: -4px; margin-right: -6px;">
+              <li class="nav-item" style="margin-right: -12px;">
+                <a class="nav-link py-1 pr-3" target="_blank" href="https://twitter.com/HMGP_UGM"><i class="fab fa-twitter-square"></i></a>
+              </li>
+              <li class="nav-item" style="margin-right: -12px;">
+                <a class="nav-link py-1 pr-3" target="_blank" href="https://line.me/R/ti/p/@enq9030b"><i class="fab fa-line"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link py-1 pr-3" target="_blank" href="https://www.instagram.com/hmgp_ugm/"><i class="fab fa-instagram-square"></i></a>
+              </li>
+            </ul>
+            <ul class="navbar-nav mb-auto ml-auto" style="margin-top: -4px;">
+              <li class="nav-item">
+                <a class="nav-link py-0" data-toggle="modal" data-target="#narahubung" href="javascript:void(0)">Narahubung</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- {{!-- login --}} -->
+    <div class="container" style="height: calc(100vh - 108px)">
+      
+        <div class="card" id="card_main" style="top: 50%; left: 50%; transform: translate(-50%, -50%);">
+          <div class="d-flex flex-row">
+            <div class="flex-fill" id="foto_main" style="background-image: url(img/login_card.png); width: 320px; background-repeat: no-repeat;
+            background-size: 95%; background-position: center; border-right: 1px; border-right: 1px solid rgba(0,0,0,.125) !important;"></div>
+            <div class="flex-fill" style="width: 320px;">
+              <div class="d-flex card-header bg-white" style="padding-top: 15px;">
+                <div class="d-flex-inline" style="padding-left: 8px; margin-top: 5px; margin-bottom: 5px;">
+                    <h4 class="card-title" style="margin-bottom: 3px;">Login</h4>
+                    <p style="font-weight: 350;font-size: 14px; margin-bottom: 0px;">Pemira HMGP 2021</p>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="container">
+                  <!-- FORM -->
+                  <form action="/login" id="form_login" method="POST" class="needs-validation" novalidate>
+                    <div class="input-group mb-3" style="margin-top: 20px;">
+                      <span class="input-group-text"><i class="fa fa-user" aria-hidden="true"></i></span>
+                      <input type="number" class="form-control input_login" name="login_nif" id="login_nif" placeholder="NIF" aria-label="NIF" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-3">
+                      <span class="input-group-text"><i class="fa fa-unlock-alt" aria-hidden="true"></i></span>
+                      <input type="password" class="form-control input_login" name="login_pass" id="login_pass" placeholder="Kata Sandi" aria-label="Kata Sandi" aria-describedby="basic-addon1" style="border-top-right-radius: 4px; border-bottom-right-radius: 4px;">
+                      <div class="invalid-feedback">
+                        <p id="invFdb_login_pass" style="margin-bottom: 0; text-align: right;"></p>
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <div class="p-2 bd-highlight ml-auto border-right" style="margin-right: 10px; padding-right: 0px;"><a class="nav-link py-0" id="tombol_daftar" href="javascript:void(0)" data-toggle="modal" data-target="#formDaftar">Daftar</a></div>
+                      <button type="submit" id="tombol_submit_login" class="btn btn-primary " style="margin-left: 10px;">Login <i class="fas fas fa-sign-in-alt" id="icon_login"></i></button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="modal-footer bg-white justify-content-center" style="padding-bottom: 6px; padding-top: 6px;">
+                <p style="font-weight: 350;font-size: 14px;">Ada kendala atau pertanyaan? 
+                  <a data-toggle="modal" data-target="#narahubung" href="javascript:void(0)">Hubungi kami</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+    </div>
+    <div class="container">
+      <div class="d-md-flex flex-row align-items-center" style="height: 50px;">
+        <div class="flex-fill">
+            <p class="display-4" style="font-size: x-large; margin-top: -30px; text-align: center; color: slategrey;">#SuaramuKunciHMGPMaju</p>
+        </div>
+    </div>
+    </div>
+    <!-- narahubung -->
+    <div class="modal fade" id="narahubung" data-backdrop="static" >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="d-flex flex-row">
+            <div class="flex-fill">
+              <div class="d-flex modal-header bg-light">
+                <div class="d-flex-inline" style="padding-left: 8px;">
+                  <h4 class="modal-title">Narahubung</h4>
+                </div>
+                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close" style="margin-top: -25px;"></button>
+              </div>
+              <div class="modal-body">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <h5>Gita Solas A.</h5>
+                      <p><i class="fab fa-whatsapp-square"></i><a href="http://wa.me/085640212863"> 082224018544</a></p>
+                    </div>
+                    <div class="col-sm-6">
+                      <h5>M. Syihab Wafi</h5>
+                      <p><i class="fab fa-whatsapp-square"></i><a href="http://wa.me/081392732628"> 081392732628</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- DAFTAR -->
+    <div class="modal fade" id="formDaftar" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="d-flex modal-header bg-light" style="padding-bottom: 5px;">
+            <img src="img/logo_hmgp_meta.png" height="50px" style="padding-right: 13px;padding-left: 5px; margin-top: -10px;" alt="logomb">
+            <div class="d-flex-inline mr-auto">
+              <h4 class="modal-title">Form Pendaftaran</h4>
+              <p>Calon Pemilih Pemira HMGP 2021</p>
+            </div>
+            <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close" style="margin-top: -60px;"></button>
+          </div>
+          <div class="modal-body" style="padding-bottom: 0px; padding-left: 23px; padding-right: 23px;">
+            <!-- FORM -->
+            <form action="/daftar" id="form_daftar" method="POST" class="needs-validation" novalidate>
+              <h5>Data diri</h5>
+              <hr class="mt-2  mb-3">
+              <div class="form-group row daftar_form_padd">
+                <label for="daftar_nif" class="col-sm-4 col-form-label">NIF</label>
+                <div class="col-sm-8">
+                  <input type="number" class="form-control input_daftar" id="daftar_nif" name="daftar_nif" placeholder="" maxlength="5" required>
+                  <div class="invalid-feedback">
+                    <p id="invFdb_daftar_nif" style="margin-bottom: 0;">Isian masih kosong.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row daftar_form_padd">
+                <label for="daftar_nama" class="col-sm-4 col-form-label">Nama Lengkap</label>
+                <div class="col-sm-8">
+                  <input type="text" class="form-control input_daftar" id="daftar_nama" name="daftar_nama" oninput="toTitleCase()" placeholder="" maxlength="50" required>
+                  <div class="invalid-feedback">
+                    <p id="invFdb_daftar_nama" style="margin-bottom: 0;">Isian masih kosong.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row daftar_form_padd">
+                  <label for="daftar_angkatan" class="col-sm-4 col-form-label input_daftar">Angkatan</label>
+                  <div class="col-sm-8">
+                      <select class="custom-select form-control" id="daftar_angkatan" name="daftar_angkatan" required>
+                          <option value="" selected disabled hidden>--Pilih Salah Satu--</option>
+                          <option value="2021">2021</option>
+                          <option value="2020">2020</option>
+                          <option value="2019">2019</option>
+                          <option value="2018">2018</option>
+                          <option value="2017">2017</option>
+                          <option value="2016">2016</option>
+                          <option value="2015">2015</option>
+                          <option value="2014">2014</option>
+                      </select>
+                      <div class="invalid-feedback">
+                        <p id="invFdb_daftar_angkatan" style="margin-bottom: 0;">Pilih salah satu.</p>
+                      </div>
+                  </div>
+              </div>
+              <h5 style="margin-top: 10px;">Keamanan</h5>
+              <hr class="mt-2  mb-3">
+              <div class="form-group row daftar_form_padd">
+                <label for="daftar_passw" class="col-sm-4 col-form-label">Kata Sandi</label>
+                <div class="col-sm-8">
+                  <input type="password" class="form-control input_daftar" id="daftar_passw" maxlength="20" name="daftar_passw" placeholder="Alphanumeric 6-12 karakter" aria-describedby="passwordHelpBlock" required>
+                  <div class="invalid-feedback">
+                    <p id="invFdb_daftar_password" style="margin-bottom: 0;">Isian masih kosong.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer modal-footer_daftar" style="padding-right: 0px; margin-top: 17px; padding-bottom: 20px; padding-left: 2px;">
+                <div class="d-flex flex-row ">
+                  <div id="passwordHelpBlock" style="margin-bottom: 0; line-height: 15px; padding-right: 12px;"  class="form-text" >
+                    Mohon isi form dengan data yang valid. Suara dengan data yang tidak valid dianggap tidak sah. Data pemilih terjamin kerahasiaannya.
+                  </div>
+                  <button type="submit" class="btn btn-primary" id="tombol_submit_daftar" style="width: 190px !important;">Daftar <i id="icon_submitdaftar" class="fas fa-paper-plane"></i></button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- notif -->
+    <div id="formDaftarNotif" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-light">
+            <div class="container">
+              <h4 class="modal-title">Notifikasi</h4>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <p>Akun berhasil didaftarkan. Mohon gunakan data berikut untuk login pada hari pemilihan:</p>
+                <div class="col-4" style="text-align: right;">
+                  <p style="margin-bottom: 0px;">NIF : </p>
+                  <p>Password :</p>
+                </div>
+                <div class="col-8">
+                  <p id="nif_hasildaftar" style="margin-bottom: 0px"></p>
+                  <p id="pass_hasildaftar"></p>
+                </div>
+              </div>
+              <div class="d-flex">
+                <button type="button" class="btn btn-primary ml-auto" onClick="window.location.reload();"><i class="fas fa-check"></i> OK</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" integrity="sha512-F5QTlBqZlvuBEs9LQPqc1iZv2UMxcVXezbHzomzS6Df4MZMClge/8+gXrKw2fl5ysdk4rWjR0vKS7NNkfymaBQ==" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

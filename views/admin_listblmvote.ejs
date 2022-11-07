@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="PEMIRA HMGP 2021">
+  <meta name="description" content="Pemilihan Raya Mahasiswa Himpunan Mahasiswa Geografi Pembangunan Tahun 2021">
+  <meta name="keywords" content="Pemira, HMGP, UGM, Geografi, 2021, Universitas Gadjah Mada">
+  <meta name="author" content="Himpunan Mahasiswa Geografi Pembangunan">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pemirahmgp2021.online/">
+  <meta property="og:title" content="PEMIRA HMGP 2021">
+  <meta property="og:description" content="Pemilihan Raya Mahasiswa Himpunan Mahasiswa Geografi Pembangunan Tahun 2021">
+  <meta property="og:image" content="/img/logo_hmgp_meta.png">
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://pemirahmgp2021.online/">
+  <meta property="twitter:title" content="PEMIRA HMGP 2021">
+  <meta property="twitter:description" content="Pemilihan Raya Mahasiswa Himpunan Mahasiswa Geografi Pembangunan Tahun 2021">
+  <meta property="twitter:image" content="/img/logo_hmgp_meta.png">
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap5.min.css">
+  <link href="/dashboard.css" rel="stylesheet">
+  <!-- Title -->
+  <title>PEMIRA HMGP</title>
+  <link rel="icon" type="image/png" href="/img/logo_hmgp.png">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+
+</head>
+<body>
+    
+  <!-- <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+    <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">Company name</a>
+    <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+    <ul class="navbar-nav px-3">
+      <li class="nav-item text-nowrap">
+        <a class="nav-link" href="#">Sign out</a>
+      </li>
+    </ul>
+  </header> -->
+
+  <div class="container-fluid" style="height: 58px;">
+    <nav class="navbar navbar-expand navbar-light fixed-top bg-white" style="padding-top: 5px;padding-bottom: 5px; padding-left: 20px; padding-right: 20px;">
+      <!-- <div class="container"> -->
+        <a class="navbar-brand" href="index.html" style="padding-top: 0px;padding-bottom: 0px;margin-right: 10px;">
+            <img src="/img/logo_hmgp_meta.png" alt="logo HMGP" style="height: 40px;">
+        </a>
+        <div class="collapse navbar-collapse flex-column align-items-start ml-lg-2 ml-0" style="margin-top:-2px;">
+          <span class="navbar-text py-0 px-lg-2" style="font-weight: 475;font-size: 19px;">Pemira HMGP 2021</span>
+          <span class="navbar-text py-0 px-lg-2" style="font-weight: 350;font-size: 12px;margin-top: -2px;">Universitas Gadjah Mada</span>
+        </div>
+        <div class="collapse navbar-collapse flex-column align-items-start ml-lg-2 ml-0" id="navbarCollapse">
+          <ul class="navbar-nav flex-row mb-2 mb-auto ml-auto logout_admin" style="margin-top: -4px; margin-right: -6px;">
+            <li class="nav-item">
+              <a class="nav-link py-1 pr-3" href="javascript:void(0)" id="tombol_logout"><i class="fas fa-power-off"></i></a>
+            </li>
+          </ul>
+          <ul class="navbar-nav mb-auto ml-auto logout_admin" style="margin-top: -4px;">
+            <li class="nav-item">
+              <a class="nav-link py-0 disabled" data-toggle="modal" data-target="#narahubung" href="javascript:void(0)">Admin</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav mr-auto mb-2 mb-lg-0" style="margin-bottom: 0 !important;">
+            <li class="nav-item">
+              <button class="navbar-toggler position-absolute d-md-none collapsed" id="menu_sidebar_toggler" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </li>
+          </ul>
+          </button>
+        </div>
+      <!-- </div> -->
+    </nav>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+        <div class="position-sticky pt-3">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/admin">
+                <span data-feather="home"></span>
+                Dashboard
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/admin/listuser">
+                <span data-feather="users"></span>
+                List Akun Terdaftar
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/admin/listaktif">
+                <span data-feather="users"></span>
+                List Mhs Blm Daftar
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/admin/listblmvote">
+                <span data-feather="layers"></span>
+                List Mhs Blm Vote
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+
+      
+
+      <main class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+
+
+
+        <h2>List Mahasiswa PW yang Udah Bikin Akun tapi Belum Vote</h2>
+        <div class="table-responsive">
+          <table class="table table-striped" id="tabel_user">
+            <thead>
+              <tr>
+                <th>Angkatan</th>
+                <th>Nama</th>
+                <th>NIU</th>
+                <th>NIF</th>
+                <!-- <th>Status</th> -->
+              </tr>
+            </thead>
+            <tbody>
+               <% results.forEach(function(data) { %>
+              <tr>
+                <td><%= data.angkatan %></td>
+                <td><%= data.nama %></td>
+                <td><%= data.niu %></td>
+                <td><%= data.nif %></td>
+                <!-- <td><%= data.status %></td> -->
+              </tr>
+              <% }); %>
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+  </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js" integrity="sha512-7x3zila4t2qNycrtZ31HO0NnJr8kg2VI67YLoRSyi9hGhRN66FHYWr7Axa9Y1J9tGYHVBPqIjSE1ogHrJTz51g==" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap5.min.js"></script>
+    <script src="/script.js"></script>
+    <script>
+      $(document).ready(function() {
+          feather.replace()
+          $('#tabel_user').DataTable();
+      });
+    </script>
+  </body>
+</html>

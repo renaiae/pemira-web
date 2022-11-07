@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="PEMIRA HMGP 2021">
+    <meta name="description" content="Pemilihan Raya Mahasiswa Himpunan Mahasiswa Geografi Pembangunan Tahun 2021">
+    <meta name="keywords" content="Pemira, HMGP, UGM, Geografi, 2021, Universitas Gadjah Mada">
+    <meta name="author" content="Himpunan Mahasiswa Geografi Pembangunan">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pemirahmgp2021.online/">
+    <meta property="og:title" content="PEMIRA HMGP 2021">
+    <meta property="og:description" content="Pemilihan Raya Mahasiswa Himpunan Mahasiswa Geografi Pembangunan Tahun 2021">
+    <meta property="og:image" content="img/logo_hmgp_meta.png">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://pemirahmgp2021.online/">
+    <meta property="twitter:title" content="PEMIRA HMGP 2021">
+    <meta property="twitter:description" content="Pemilihan Raya Mahasiswa Himpunan Mahasiswa Geografi Pembangunan Tahun 2021">
+    <meta property="twitter:image" content="img/logo_hmgp_meta.png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!-- Title -->
+    <title>PEMIRA HMGP</title>
+    <link rel="icon" type="image/png" href="img/logo_hmgp.png">
+  </head>
+  <body style="background-color: #f8f9fa;">
+    <!-- Navbar -->
+    <div class="container-fluid" style="height: 58px;">
+      <nav class="navbar navbar-expand navbar-light fixed-top bg-white" style="padding-top: 5px;padding-bottom: 5px;">
+        <div class="container">
+          <a class="navbar-brand" href="index.html" style=" padding: 0px;">
+              <img src="img/logo_hmgp_meta.png" alt="logo HMGP" style="height: 40px;">
+          </a>
+          <button class="navbar-toggler mt-1" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse flex-column align-items-start ml-lg-2 ml-0" style="margin-top:-2px;">
+            <span class="navbar-text py-0 px-lg-2" style="font-weight: 475;font-size: 19px;">Pemira HMGP</span>
+            <span class="navbar-text py-0 px-lg-2" style="font-weight: 350;font-size: 12px;margin-top: -2px;">Universitas Gadjah Mada</span>
+          </div>
+          <div class="collapse navbar-collapse flex-column align-items-start ml-lg-2 ml-0" id="navbarCollapse">
+            <ul class="navbar-nav flex-row mb-2 mb-auto ml-auto" style="margin-top: -4px; margin-right: -6px;">
+              <li class="nav-item">
+                <a class="nav-link py-1 pr-3" href="javascript:void(0)" id="tombol_logout"><i class="fas fa-power-off"></i></a>
+              </li>
+            </ul>
+            <ul class="navbar-nav mb-auto ml-auto" style="margin-top: -4px;">
+              <li class="nav-item">
+                <a class="nav-link py-0 disabled" data-toggle="modal" data-target="#narahubung" href="javascript:void(0)"><%= nif %></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- {{!-- vote --}} -->
+    <div class="container bg-light" style="height: calc(100vh - 58px)">
+      <div class="d-md-flex flex-row align-items-center" id="vote_area">
+        <div class="card flex-fill vote_card col-md-4">
+          <img class="card-img-top" src="img/card1.jpg" alt="Card image">
+          <div class="card-body">
+            <!-- <h5 class="card-title">Teddy Haris</h5> -->
+            <p class="card-text text_visi" style="font-size: small;" >"Mewujudkan HMGP sebagai wadah aspirasi ruang bersama dalam pengembangan karir dan pengabdian kepada masyarakat guna meningkatkan sinergitas civitas akademika pada lingkup internal dan eksternal mahasiswa Geografi Pembangunan yang berlandasakan asas kekeluargaan, tenggang rasa, dan melek multikulturalisme"  </p>
+            <a id="vote_1" href="javascript:void(0)" data-toggle="modal" data-target="#konfirmasi" class="btn btn-primary <%= status %>"><i class="fas fa-vote-yea"></i> Vote</a>
+          </div>
+        </div>
+        <div class="card flex-fill vote_card col-md-4">
+          <img class="card-img-top" src="img/card2.jpg" alt="Card image">
+          <div class="card-body">
+            <!-- <h5 class="card-title">Nico Awwaludin</h5> -->
+            <p class="card-text text_visi" style="font-size: small;">"Mewujudkan HMGP menjadi lembaga adaptof sebagai wadah penyaluran postensi dan aspirasi mahasiswa Pembangunan Wilayah, serta membawa kebermanfaatan bagi unit internal maupun eksternal"</p>
+            <a id="vote_2" href="javascript:void(0)" data-toggle="modal" data-target="#konfirmasi" class="btn btn-primary <%= status %>"><i class="fas fa-vote-yea"></i> Vote</a>
+          </div>
+        </div>
+        <div class="card flex-fill vote_card col-md-4">
+          <img class="card-img-top" src="img/card3.jpg" alt="Card image">
+          <div class="card-body">
+            <!-- <h5 class="card-title">Anja Natalia</h5> -->
+            <p class="card-text text_visi" style="font-size: small;">"Mewujudkan Himpunan Mahasiswa Geografi Pembangunan (HMGP) sebagai kanopi penaung seluruh elemen yang berdinamika di dalamnya, sekaligus sebagai motor penggerak bagi seluruh aktivitas intra/ekstra-himpunan"</p>
+            <a id="vote_3" href="javascript:void(0)" data-toggle="modal" data-target="#konfirmasi" class="btn btn-primary <%= status %>"><i class="fas fa-vote-yea"></i> Vote</a>
+          </div>
+        </div>
+      </div>
+      <div class="d-md-flex flex-row align-items-center" id="slogan_area">
+          <div class="flex-fill">
+              <p class="display-4" style="font-size: x-large; text-align: center; color: slategrey">#SuaramuKunciHMGPMaju</p>
+          </div>
+      </div>
+    </div>    
+    <!-- narahubung -->
+    <div class="modal fade" id="narahubung" data-backdrop="static" >
+      <div class="modal-dialog modal-md modal-dialog-centered">
+        <div class="modal-content">
+          <div class="d-flex flex-row">
+            <div class="flex-fill">
+              <div class="d-flex modal-header bg-light">
+                <div class="d-flex-inline" style="padding-left: 8px;">
+                  <h4 class="modal-title">Narahubung</h4>
+                </div>
+                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close" style="margin-top: -25px;"></button>
+              </div>
+              <div class="modal-body">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <h5>Pradipta Guntur Putra</h5>
+                      <p style="margin-bottom: 1px;"><i class="fab fa-whatsapp-square"></i> 08562852490</p>
+                      <p><i class="fab fa-line"></i> pradipta23guntur</p>
+                    </div>
+                    <div class="col-sm-6">
+                      <h5>Adristi Fausta Nuastika</h5>
+                      <p style="margin-bottom: 1px;"><i class="fab fa-whatsapp-square"></i> 085732669203</p>
+                      <p><i class="fab fa-line"></i> affanampataen</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- konfirmasi -->
+    <div id="konfirmasi" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-light">
+            <div class="container">
+              <h4 class="modal-title">Konfirmasi</h4>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <p>Apakah anda yakin dengan pilihan anda?</p>
+              </div>
+              <div class="d-flex">
+                <button type="button" class="btn btn-primary" id="batal_vote" data-dismiss="modal" data-target="#konfirmasi"><i class="fas fa-angle-left"></i> Tidak</button>
+                <button type="button" class="btn btn-primary ml-auto" id="konfirmasi_vote">Ya <i class="fas fa-check" id="icon_konfirmasi_vote"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- notif -->
+    <div id="notif_vote" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-light">
+            <div class="container">
+              <h4 class="modal-title">Notifikasi</h4>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <p id="notif_vote_text"></p>
+              </div>
+              <div class="d-flex">
+                <button type="button" class="btn btn-primary ml-auto" onClick="window.location.reload();"><i class="fas fa-check"></i> OK</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" integrity="sha512-F5QTlBqZlvuBEs9LQPqc1iZv2UMxcVXezbHzomzS6Df4MZMClge/8+gXrKw2fl5ysdk4rWjR0vKS7NNkfymaBQ==" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <!-- <script>
+        $(document).ready(function(){
+            alert("Masa vote sudah berakhir. Terima kasih atas partisipasinya.");
+        });
+    </script> -->
+  </body>
+</html>

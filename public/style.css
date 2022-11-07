@@ -1,0 +1,177 @@
+
+        
+            .navbar {
+                box-shadow: 1px 0.4rem 0.5rem rgba(0, 0, 0, 0.05);
+            }
+
+            .navbar-link {
+                color: rgb(245, 245, 245);
+                font-weight: 500;
+            }
+            /* .navbar-brand img{
+                width: 35px
+            } */
+            .card {
+                border: 0px;
+                box-shadow: 1px 0.4rem 0.5rem rgba(0, 0, 0, 0.05);
+            }
+            .daftar_form_padd {
+                padding-top: 4px;
+            }
+            .invalid-feedback {
+                margin-top: 0px;
+            }
+
+@media (min-width:0) and (max-width: 575px) {
+    .d-md-flex {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    #foto_main {
+        display: none;
+    }
+    #card_main {
+        max-width: 540px;
+    }
+    .col-form-label.col-sm-4 {
+        text-align: left;
+        padding-bottom: 0px;
+    }
+    .mb-3.mt-2 {
+        margin-bottom: 5px !important;
+    }
+    .modal-footer_daftar {
+        margin-top: 23px !important;
+    }
+    .vote_card {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+    .d-md-flex {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    #foto_main {
+        display: none;
+    }
+    #card_main {
+        max-width: 540px;
+    }
+    .col-form-label.col-sm-4 {
+        text-align: right;
+    }
+    .vote_card {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    body {
+        overflow: hidden;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+        padding:0px;
+        margin:0px;
+        width:100%;
+        height:100%;
+    }
+    body::-webkit-scrollbar {
+        display: none;
+    }
+    #card_main {
+        max-width: 720px;
+    }
+    .vote_card {
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+    .col-form-label.col-sm-4 {
+        text-align: right;
+    }
+    .text_visi {
+        height: 209px;
+    }
+    #vote_area {
+        height: calc(100vh - 108px);
+    }
+    #slogan_area {
+        height: 50px;
+    }
+    .display-4 {
+        margin-top: -30px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    body {
+        overflow: hidden;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+        padding:0px;
+        margin:0px;
+        width:100%;
+        height:100%;
+    }
+    body::-webkit-scrollbar {
+        display: none;
+    }
+    #card_main {
+        max-width: 720px;
+    }
+    .vote_card {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .col-form-label.col-sm-4 {
+        text-align: right;
+    }
+    .text_visi {
+        height: 152px;
+    }
+    #vote_area {
+        height: calc(100vh - 108px);
+    }
+    #slogan_area {
+        height: 50px;
+    }
+    .display-4 {
+        margin-top: -30px;
+    }
+}
+@media (min-width: 1200px) {
+    body {
+        overflow: hidden;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+        padding:0px;
+        margin:0px;
+        width:100%;
+        height:100%;
+    }
+    body::-webkit-scrollbar {
+        display: none;
+    }
+    #card_main {
+        max-width: 720px;
+    }
+    .vote_card {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .col-form-label.col-sm-4 {
+        text-align: right;
+    }
+    .text_visi {
+        height: 152px;
+    }
+    #vote_area {
+        height: calc(100vh - 108px);
+    }
+    #slogan_area {
+        height: 50px;
+    }
+    .display-4 {
+        margin-top: -30px;
+    }
+}
